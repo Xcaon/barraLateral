@@ -1,0 +1,51 @@
+html,body {
+  min-height: 100%;
+  background-color: #ccc;
+}
+
+.contenedor {
+  min-height: 100vh;
+  display: flex;
+}
+
+.barralateral {
+  width: 200px;
+  background-color: black;
+  padding: 4px;
+  transition: 1s all;
+}
+
+.boton {
+  position: fixed;
+  left: 30%;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 4px;
+  border: 0px;
+  min-height: 25px;
+  box-shadow: 0px 2px;
+}
+
+.contenidogeneral {
+  width: 100%;
+  padding: 10px;
+}
+
+li {
+  color: black;
+  list-style-type: none;
+  min-height: 50px;
+  background-color: #ccc;
+  text-align: center;
+  padding: 4%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.barralateral.esconder {
+  transform: translateX(-200px);
+}
+
+.barralateral.show {
+  transform: translateX(0);
+}
